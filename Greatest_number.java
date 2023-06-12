@@ -1,4 +1,4 @@
-//WAP to print the greater number.
+//WAP to print the greater number among three number.
 // Take these umber input from the user.
 
 import java.util.Scanner;
