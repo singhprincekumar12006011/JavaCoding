@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args){
-        System.out.println("Welcome to calculator" + " we can perform operation between two number");
+        System.out.println("Welcome to calculator. we can perform operation between two number");
         int num1;
         int num2;
         char oper;
