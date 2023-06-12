@@ -1,0 +1,47 @@
+/*
+
+WAP to print the pattern 
+     *
+    **
+   ***
+  ****
+ *****
+
+*/
+
+import java.util.Scanner;
+public class Right_number_Pattern {
+    public static void main(String[] args) {
+        int num;
+        System.out.println("Enter the number of row to be print");
+        Scanner sc = new Scanner(System.in);
+        num = sc.nextInt();
+
+        for(int i=1; i <= num; i++)
+        {
+            for (int j=num; j>=i; j--)
+            {
+                System.out.print(" ");
+            }
+            for (int k = 1; k<=i; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+    }
+}
+
+
+
+
+output:-
+Enter the number of row to be print
+5
+     *
+    **
+   ***
+  ****
+ *****
+
+Process finished with exit code 0
