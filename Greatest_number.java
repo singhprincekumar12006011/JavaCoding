@@ -1,5 +1,5 @@
 //WAP to print the greater number among three number.
-// Take these umber input from the user.
+// Take these number as input from the user.
 
 import java.util.Scanner;
 
