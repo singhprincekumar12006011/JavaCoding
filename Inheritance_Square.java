@@ -1,32 +1,29 @@
 import java.util.Scanner;
 
-public class Inheritance_Square {
-    public static void main(String[] main) {
-        int x; 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the side of square:");
-        x = sc.nextInt();
-        Area ar = new Area(x);
-    }
-}
-
 class Dimension {
-    int length;
+    int side;
 
-    Dimension(int l) {
-        length = l;
+    Dimension(int i) {
+        side = i;
     }
 }
 
-class Area extends Dimension {
+class SquArea extends Dimension {
     int area;
-    int perimeter;
 
-    Area(int l) {
-        super(l);
-        area = l * l;
-        perimeter = 4 * l;
-        System.out.println("Area of square: " + area);
-        System.out.println("Perimeter of square: " + perimeter);
+    SquArea(int i) {
+        super(i);
+        area = i * i;
+        System.out.println("The area of Square is: " + area);
+    }
+}
+
+public class Inheritance_Square {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the side of the square: ");
+        int s = sc.nextInt();
+
+        SquArea sq = new SquArea(s);
     }
 }
